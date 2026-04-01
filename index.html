@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MegaHUD - Real-time opponent intelligence for Poker Now. Live HUD overlay, exploitability ratings, auto-fold engine, and more.">
+  <meta name="keywords" content="poker HUD, Poker Now, poker stats, VPIP, PFR, poker tool, Chrome extension, online poker">
+  <meta name="theme-color" content="#0f1729">
+  <title>MegaHUD - Real-Time Opponent Intelligence for Poker Now</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">&#9824;</span>
+        <span class="nav__logo-text">MegaHUD</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#install">Install</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="#pricing" class="btn btn--outline btn--sm">Try Pro Free</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#install">Install</a></li>
+      <li><a href="#pricing" class="btn btn--primary btn--md">Try Pro Free</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-glow"></div>
+    <div class="container">
+      <div class="hero__content fade-in">
+        <div class="hero__badge">Chrome Extension for pokernow.com &amp; pokernow.club</div>
+        <h1 class="hero__title">
+          Real-Time Opponent Intelligence<br>
+          <span class="hero__title--accent">for Poker Now</span>
+        </h1>
+        <p class="hero__subtitle">
+          Track every stat that matters. Exploit every leak. MegaHUD gives you a professional-grade heads-up display
+          directly on your Poker Now tables &mdash; from VPIP to exploitability ratings, all in real time.
+        </p>
+        <div class="hero__ctas">
+          <a href="#install" class="btn btn--primary btn--lg">Start Free</a>
+          <a href="#pricing" class="btn btn--secondary btn--lg">Try Pro Free for 7 Days</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-value">10+</span>
+            <span class="hero__stat-label">Live Stats Tracked</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">4</span>
+            <span class="hero__stat-label">Poker Formats</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">0s</span>
+            <span class="hero__stat-label">Setup Time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-header__title">Everything You Need to Dominate</h2>
+        <p class="section-header__subtitle">
+          Professional-grade poker intelligence, built directly into your browser. No downloads, no popups &mdash; just pure edge.
+        </p>
+      </div>
+
+      <div class="features__grid">
+        <!-- Feature 1 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#127183;</div>
+          <h3 class="feature-card__title">Real-Time HUD Overlay</h3>
+          <p class="feature-card__desc">
+            Live stats on every player: VPIP%, PFR%, 3-Bet%, C-Bet%, AF, WTSD%. Street-based fading highlights the most relevant stats per betting round.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#9889;</div>
+          <h3 class="feature-card__title">Stealth Auto-Fold Engine</h3>
+          <p class="feature-card__desc">
+            Configure position-based folding ranges with a 13x13 hand matrix. Auto-folds weak hands preflop so you never waste a second. Instant disable with Shift+F.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#127919;</div>
+          <h3 class="feature-card__title">Exploitability Rating</h3>
+          <p class="feature-card__desc">
+            AI-powered 1&ndash;10 leak scoring based on 8 weighted factors. Instantly identify the fish at the table and target their biggest weaknesses.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#9823;</div>
+          <h3 class="feature-card__title">All Poker Now Formats</h3>
+          <p class="feature-card__desc">
+            NLH, PLO4, PLO5, PLO Hi/Lo &mdash; fully supported. Auto-detects your game type and tracks stats separately per stake level.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#9729;</div>
+          <h3 class="feature-card__title">Cloud Sync &amp; Multi-Device</h3>
+          <p class="feature-card__desc">
+            Sync your player database across up to 2 devices. Google OAuth login keeps everything seamless. Never lose your data again.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#128200;</div>
+          <h3 class="feature-card__title">Lifetime Ledger</h3>
+          <p class="feature-card__desc">
+            Track net profit and loss vs. every opponent with per-hand accuracy. Cloud-synced deduplication ensures your records are always clean.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#128269;</div>
+          <h3 class="feature-card__title">Showdown Profiler</h3>
+          <p class="feature-card__desc">
+            Tag hands as Air, Thin Value, Thick Value, or Nuts. Track each player's Value-to-Bluff ratio to know exactly how they play at showdown.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#128064;</div>
+          <h3 class="feature-card__title">Stealth Mode</h3>
+          <p class="feature-card__desc">
+            Press Shift+H to instantly hide all HUD overlays during social or casual games. Stats keep tracking silently in the background.
+          </p>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#128266;</div>
+          <h3 class="feature-card__title">Audio Alerts</h3>
+          <p class="feature-card__desc">
+            Premium hand alerts for AA/KK/QQ/AKs, big pot rumble effects, and squeeze detection. Works even when the browser tab is muted.
+          </p>
+          <span class="feature-card__badge">Pro</span>
+        </div>
+
+        <!-- Feature 10 -->
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">&#128161;</div>
+          <h3 class="feature-card__title">Dynamic Reminders</h3>
+          <p class="feature-card__desc">
+            Context-aware tips like "Heads-Up: Top pair is THICK VALUE" or "Polarize your range on the river." Level up your game in real time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-header__title">Simple, Transparent Pricing</h2>
+        <p class="section-header__subtitle">
+          Start free, upgrade when you're ready. No hidden fees, cancel anytime.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+        <!-- Free Tier -->
+        <div class="pricing-card fade-in">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Free</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$0</span>
+              <span class="pricing-card__period">/ forever</span>
+            </div>
+            <p class="pricing-card__tagline">Everything you need to get started</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li><span class="check">&#10003;</span> VPIP%, PFR%, 3-Bet% stats</li>
+            <li><span class="check">&#10003;</span> Avg Lead &amp; Avg Raise sizing</li>
+            <li><span class="check">&#10003;</span> Stealth Mode (Shift+H)</li>
+            <li><span class="check">&#10003;</span> Ledger view (Shift+L)</li>
+            <li><span class="check">&#10003;</span> HUD position customization</li>
+            <li><span class="check">&#10003;</span> Local IndexedDB storage</li>
+            <li><span class="check">&#10003;</span> Dynamic reminders</li>
+          </ul>
+          <a href="#install" class="btn btn--outline btn--lg btn--full">Start Free</a>
+        </div>
+
+        <!-- Pro Tier -->
+        <div class="pricing-card pricing-card--pro fade-in">
+          <div class="pricing-card__ribbon">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name pricing-card__name--pro">MegaHUD Pro</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount pricing-card__amount--pro">$29</span>
+              <span class="pricing-card__period">/ month</span>
+            </div>
+            <p class="pricing-card__tagline">7-day free trial &middot; Cancel anytime</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__features-divider">Everything in Free, plus:</li>
+            <li><span class="check check--pro">&#10003;</span> Cloud sync (2 devices)</li>
+            <li><span class="check check--pro">&#10003;</span> C-Bet% / Fold to C-Bet% / Check-Raise%</li>
+            <li><span class="check check--pro">&#10003;</span> Aggression Factor (AF) / WTSD%</li>
+            <li><span class="check check--pro">&#10003;</span> 30-hand quality gate</li>
+            <li><span class="check check--pro">&#10003;</span> Auto-Fold Engine (13x13 matrix)</li>
+            <li><span class="check check--pro">&#10003;</span> Exploitability Rating (1&ndash;10)</li>
+            <li><span class="check check--pro">&#10003;</span> Lifetime Ledger with cloud dedup</li>
+            <li><span class="check check--pro">&#10003;</span> Showdown Profiler (V:B ratio)</li>
+            <li><span class="check check--pro">&#10003;</span> Audio alerts (tab-mute-proof)</li>
+            <li><span class="check check--pro">&#10003;</span> Merged Table Stats</li>
+            <li><span class="check check--pro">&#10003;</span> Board Connection Odds</li>
+            <li><span class="check check--pro">&#10003;</span> Positional stat breakdowns</li>
+            <li><span class="check check--pro">&#10003;</span> Priority support</li>
+          </ul>
+          <a href="#install" class="btn btn--primary btn--lg btn--full">Start 7-Day Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Section -->
+  <section class="install" id="install">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-header__title">Up and Running in 2 Minutes</h2>
+        <p class="section-header__subtitle">
+          No app store required. Load MegaHUD directly into Chrome and start playing smarter immediately.
+        </p>
+      </div>
+
+      <div class="install__steps">
+        <div class="install__step fade-in">
+          <div class="install__step-number">1</div>
+          <div class="install__step-content">
+            <h4>Download the Extension</h4>
+            <p>Grab the latest MegaHUD .zip file from the download link.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">2</div>
+          <div class="install__step-content">
+            <h4>Unzip to a Local Folder</h4>
+            <p>Extract the .zip contents to any folder on your computer.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">3</div>
+          <div class="install__step-content">
+            <h4>Open Chrome Extensions</h4>
+            <p>Navigate to <code>chrome://extensions</code> in your browser.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">4</div>
+          <div class="install__step-content">
+            <h4>Enable Developer Mode</h4>
+            <p>Toggle the "Developer mode" switch in the top-right corner.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">5</div>
+          <div class="install__step-content">
+            <h4>Load the Extension</h4>
+            <p>Click "Load unpacked" and select the folder you extracted.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">6</div>
+          <div class="install__step-content">
+            <h4>Open MegaHUD</h4>
+            <p>Click the MegaHUD icon in your toolbar to configure settings.</p>
+          </div>
+        </div>
+
+        <div class="install__step fade-in">
+          <div class="install__step-number">7</div>
+          <div class="install__step-content">
+            <h4>Play &amp; Profit</h4>
+            <p>Visit any Poker Now table &mdash; the HUD activates automatically.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__content fade-in">
+        <h2 class="cta-banner__title">Ready to See What You've Been Missing?</h2>
+        <p class="cta-banner__subtitle">
+          Join thousands of Poker Now players using MegaHUD to make smarter decisions at every table.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#install" class="btn btn--primary btn--lg">Get Started Free</a>
+          <a href="#pricing" class="btn btn--secondary btn--lg">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <span class="nav__logo-icon">&#9824;</span>
+            <span class="nav__logo-text">MegaHUD</span>
+          </a>
+          <p class="footer__tagline">Real-time opponent intelligence for Poker Now.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#">Privacy Policy</a>
+          <a href="mailto:support@megahud.com">Support</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 MegaHUD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
