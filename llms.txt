@@ -1,0 +1,53 @@
+# MegaHUD
+
+> Real-time opponent intelligence for Poker Now.
+
+MegaHUD is a Chrome extension that provides a professional-grade heads-up display (HUD) overlay for pokernow.com and pokernow.club. It tracks live poker statistics, rates opponent exploitability, and automates preflop folding decisions.
+
+## Product
+
+- Chrome Extension (Manifest V3)
+- Works on pokernow.com and pokernow.club
+- Supports NLH, PLO4, PLO5, and PLO Hi/Lo
+- Free tier + Pro tier ($39/month, 7-day free trial)
+
+## Free Features
+
+- VPIP%, PFR%, 3-Bet% live stats
+- Average Lead and Average Raise sizing
+- Stealth Mode toggle (Shift+H) to hide overlays
+- Ledger view (Shift+L)
+- HUD position customization
+- Local IndexedDB storage
+- Dynamic context-aware reminders
+
+## Pro Features
+
+- Cloud sync across 2 devices via Google OAuth
+- Advanced stats: C-Bet%, Fold to C-Bet%, Check-Raise%, Aggression Factor (AF), WTSD%
+- 30-hand quality gate before displaying stats
+- Auto-Fold Engine with 13x13 hand matrix and position-based ranges (Shift+F to toggle)
+- Exploitability Rating: AI-powered 1-10 leak scoring based on 8 weighted factors
+- Lifetime Ledger with cloud-synced deduplication
+- Showdown Profiler: tags hands as Air, Thin Value, Thick Value, or Nuts; tracks Value-to-Bluff ratio
+- Audio alerts for premium hands (AA/KK/QQ/AKs), big pot rumble, and squeeze detection (works when tab is muted)
+- Merged Table Stats
+- Board Connection Odds
+- Positional stat breakdowns
+- Priority support
+
+## Installation
+
+MegaHUD is loaded as an unpacked Chrome extension:
+
+1. Download the .zip file
+2. Extract to a local folder
+3. Open chrome://extensions
+4. Enable Developer Mode
+5. Click "Load unpacked" and select the extracted folder
+6. Click the MegaHUD icon in the toolbar to configure
+7. Visit any Poker Now table — the HUD activates automatically
+
+## Contact
+
+- Email: support@megahud.com
