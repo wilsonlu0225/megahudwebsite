@@ -57,7 +57,7 @@ Everything you need to get started.
 - Local IndexedDB storage
 - Dynamic reminders
 
-### MegaHUD Pro — $39 / month
+### MegaHUD Pro — $24.99 / month
 7-day free trial. Cancel anytime.
 
 Everything in Free, plus:
