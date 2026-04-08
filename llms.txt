@@ -9,7 +9,7 @@ MegaHUD is a Chrome extension that provides a professional-grade heads-up displa
 - Chrome Extension (Manifest V3)
 - Works on pokernow.com and pokernow.club
 - Supports NLH, PLO4, PLO5, and PLO Hi/Lo
-- Free tier + Pro tier ($24.99/month, 7-day free trial)
+- Free tier + Pro tier ($24.99/4 weeks, 7-day free trial)
 
 ## Free Features
 
