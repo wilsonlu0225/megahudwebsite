@@ -7,46 +7,53 @@ MegaHUD is a Chrome extension that provides a professional-grade heads-up displa
 ## Product
 
 - Chrome Extension (Manifest V3)
+- Available on the Chrome Web Store
 - Works on pokernow.com and pokernow.club
-- Supports NLH, PLO4, PLO5, and PLO Hi/Lo
-- Free tier + Pro tier ($24.99/4 weeks, 7-day free trial)
+- Supports NLH, PLO4, PLO5, and DBBPLO
+- Fish tier (free) + Megalodon tier ($24.99/4 weeks, 7-day free trial)
 
-## Free Features
+## Fish Features (Free)
 
-- VPIP%, PFR%, 3-Bet% live stats
+- VPIP%, PFR%, 3-Bet%, C-Bet% live stats
 - Average Lead and Average Raise sizing
+- Position tracking (2-10 players, auto-detected)
 - Stealth Mode toggle (Shift+H) to hide overlays
-- Ledger view (Shift+L)
 - HUD position customization
 - Local IndexedDB storage
 - Dynamic context-aware reminders
+- Auto game type and stake detection
+- Bomb pot and walk detection
 
-## Pro Features
+## Megalodon Features (Paid)
 
-- Cloud sync across 2 devices via Google OAuth
-- Advanced stats: C-Bet%, Fold to C-Bet%, Check-Raise%, Aggression Factor (AF), WTSD%
+- Cloud sync across 3 devices via Google OAuth
+- Advanced stats: Fold to C-Bet%, Check-Raise%, Aggression Factor (AF), WTSD%, WWSF
+- Additional stats: Fold to 3-Bet%, Donk Bet%, Squeeze%, River Checkback%, Inelasticity Index
 - 30-hand quality gate before displaying stats
-- Auto-Fold Engine with 13x13 hand matrix and position-based ranges (Shift+F to toggle)
-- Exploitability Rating: AI-powered 1-10 leak scoring based on 8 weighted factors
-- Lifetime Ledger with cloud-synced deduplication
-- Showdown Profiler: tags hands as Air, Thin Value, Thick Value, or Nuts; tracks Value-to-Bluff ratio
+- Auto-Fold Engine with 13x13 hand matrix and position-based ranges (Shift+A to toggle)
+- Exploitability Rating: 1-10 leak scoring based on 8 weighted factors
+- Lifetime Ledger with cloud-synced deduplication (Shift+L to cycle views)
 - Audio alerts for premium hands (AA/KK/QQ/AKs), big pot rumble, and squeeze detection (works when tab is muted)
-- Merged Table Stats
-- Board Connection Odds
+- Expandable stat ribbon per player with full stat matrix
 - Positional stat breakdowns
 - Priority support
 
+## Keyboard Shortcuts
+
+- Shift+H — Toggle Stealth Mode (hide/show HUD)
+- Shift+P — Toggle Positional stats (ALL vs POS)
+- Shift+L — Cycle Ledger mode (Off / Lifetime / Game) (Megalodon)
+- Shift+A — Toggle Auto-Fold engine (Megalodon)
+- Shift+S — Toggle Stakes mode (current stake vs all stakes)
+- Shift+E — Expand/collapse all HUD panels
+
 ## Installation
 
-MegaHUD is loaded as an unpacked Chrome extension:
+MegaHUD is available on the Chrome Web Store:
 
-1. Download the .zip file
-2. Extract to a local folder
-3. Open chrome://extensions
-4. Enable Developer Mode
-5. Click "Load unpacked" and select the extracted folder
-6. Click the MegaHUD icon in the toolbar to configure
-7. Visit any Poker Now table — the HUD activates automatically
+1. Install from the Chrome Web Store
+2. Click the MegaHUD icon in the toolbar to configure settings and sign in
+3. Visit any Poker Now table — the HUD activates automatically
 
 ## Contact
 
