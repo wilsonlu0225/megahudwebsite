@@ -760,6 +760,11 @@ code {
   line-height: 1.6;
 }
 
+.install__cta {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+
 /* --- CTA Banner --- */
 .cta-banner {
   padding: var(--space-4xl) 0;
